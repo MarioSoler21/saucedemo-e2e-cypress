@@ -1,0 +1,16 @@
+{
+  "name": "saucedemo-e2e-cypress",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E2E automation for https://www.saucedemo.com using Cypress 13+ and Mochawesome",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --config video=false",
+    "test": "npm run cypress:run",
+    "report": "echo \"Mochawesome HTML reports are generated automatically by the reporter in cypress/reports\""
+  },
+  "devDependencies": {
+    "cypress": "^13.0.0",
+    "mochawesome": "^6.2.2"
+  }
+}

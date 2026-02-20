@@ -1,0 +1,11 @@
+Conclusiones y hallazgos - Pruebas E2E SauceDemo
+
+- El flujo de compra completo se automatizó usando Cypress 13+.
+- Se utilizaron selectores `data-test` cuando están disponibles (login, botones "add to cart", campos de checkout).
+- No se usan `cy.wait()` innecesarios; se confía en selectores y asserts para sincronización.
+- El test valida en cada paso: login (URL y título), badge del carrito, contenido del carrito, campos de checkout, texto final EXACTO y URL final.
+- Mochawesome genera reportes HTML y JSON en `cypress/reports` tras ejecutar `npm test`.
+
+Recomendaciones futuras:
+- Agregar más specs para flujos negativos (login fallido, checkout con datos inválidos).
+- Integrar CI (GitHub Actions) para ejecutar `npm test` y publicar artefactos de reporte.

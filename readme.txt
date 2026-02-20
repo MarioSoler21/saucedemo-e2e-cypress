@@ -1,5 +1,7 @@
 Proyecto E2E Cypress para https://www.saucedemo.com
 
+Repositorio:  https://github.com/MarioSoler21/saucedemo-e2e-cypress.git
+
 Requisitos:
 - Node.js 18+ (o compatible)
 - Conexión a internet
@@ -44,4 +46,7 @@ Ejecutar solo el spec de checkout:
 
 ```bash
 npx cypress run --spec "cypress/e2e/checkout.cy.js"
+
 ```
+
+//
